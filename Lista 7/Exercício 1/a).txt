@@ -1,0 +1,23 @@
+a) o que ta errado é a parte 
+
+ t1.estilo = "cheio";
+ t2.estilo = "contorno";
+
+porque como o estilo é privado não pode ser acessado diretamente assim, tem que usar os métodos get e set para poder acessar
+
+
+correção:
+na classe Triangulo foi adicionado:
+
+public void setEstilo(String estilo){
+        this.estilo = estilo;
+    }
+
+    public String getEstilo(){
+        return estilo;
+    }
+
+e na classe Shapes o que tava errado foi substituido por:
+t1.setEstilo("Cheio");
+t2.setEstilo("Contorno");
+

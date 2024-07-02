@@ -1,0 +1,22 @@
+1ª impressão
+
+x:8 
+
+porque um objeto da classe Protegido é criado com valor 8 passado para o construtor e o método getI() é chamado e é nesse método que retorna i que é 8
+
+2ª impressão
+
+x:12
+
+porque um objeto da classe ProtegidoSub é criado com valor 4 passado para o construtor e o construtor da classe Protegido é chamado entao i=4
+
+depois o método mudar(12) é chamado, que puxa o método ajustar(12), e faz i valer 12
+
+
+Atributo i com modificador private
+
+o modificador private garante que o atributo i só possa ser acessado diretamente apenas dentro da classe protegido
+
+Método ajustar com modificador protected
+
+o modificador protected permite que o método ajustar seja acessado dentro da própria classe e pelas subclasses dessa classe

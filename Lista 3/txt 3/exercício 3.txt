@@ -1,0 +1,5 @@
+Classe: é uma estrutura que é usada como modelo ou um plano a partir do qual os objetos são criados. Ela define o estado e o comportamento que os objetos da classe compartilham
+
+Objeto: é uma instância de uma classe. Quando você cria um objeto você está criando uma entidade concreta baseada no modelo definido pela classe
+
+Método: é um bloco de código nomeado que definem comportamentos ou maneiras de manipular os dados de um objeto

@@ -1,0 +1,1 @@
+c) se você colocar largura e altura como private vai dar erro porque as outras classes estão acessando esses atributos diretamente, então o jeito para arrumar é usar os métodos get e set

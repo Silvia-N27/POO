@@ -1,0 +1,13 @@
+vai ser impresso:
+
+Computador()
+Notebook()
+Codigo: 12345
+
+porque no System.out.println("Computador()"); está escrito entre aspas o "Computador()" então vai imprimir literalmente Computador()
+
+mesma coisa com o System.out.println("Notebook()"); porque como o "Notebook()" está entre aspas vai imprimir literalmente Notebook()"
+
+e no código vai imprimir por causa do método ligar, onde tem escrito System.out.println("Codigo: " + codigo);
+
+todos eles estão no construtor na classe Notebook, na main voce está criando uma instância de Notebook na main, vai ser impresso as informações

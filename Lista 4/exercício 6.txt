@@ -1,0 +1,6 @@
+tem que ser declarado como static
+
+exemplo:
+public class Classe {
+    public static int var;
+}

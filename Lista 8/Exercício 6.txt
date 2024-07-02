@@ -1,0 +1,11 @@
+6)
+vai ser impresso:
+
+Construção de A.
+Construção de B.
+Construção de C.
+
+na main é criado uma instância da classe C
+quando C c = new C(); é executado o construtor de C é chamado
+depois o construtor de C chama o construtor de B
+e depois o construtor de B chama o construtor de A

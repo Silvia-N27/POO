@@ -1,0 +1,1 @@
+incorreto, porque para poder ter 2 construtores precisa ter parâmetros diferentes

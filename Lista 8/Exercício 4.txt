@@ -1,0 +1,1 @@
+4) não, ela tem que ser a primeira coisa dentro de um construtor

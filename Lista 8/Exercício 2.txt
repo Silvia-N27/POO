@@ -1,0 +1,13 @@
+2) usando a palavra reservada super, por exemplo:
+
+na super classe tem um construtor 
+
+public Aa(int a){
+   this.a=a;
+}
+
+na subclasse vai ta escrito
+
+public AaSub(int a){
+   super(a);
+}

@@ -1,0 +1,13 @@
+deve ser usado o private
+
+public class Classe {
+    private int var;
+
+    public void setVar(int valor) {
+        var = valor;
+    }
+
+    public int getVar() {
+        return var;
+    }
+}

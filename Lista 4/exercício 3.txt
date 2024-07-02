@@ -1,0 +1,8 @@
+incorreto, pois não tem nenhum método chamado cont, e sim um método chamado setCont, então o certo seria
+
+public class Y {
+	public static void main (String[ ] args) {
+		X ob = new X();
+		ob.setCont = 10;
+	}
+}
