@@ -1,0 +1,31 @@
+1) Classe Throwable
+
+2) Deve estar dentro da instrução try
+
+3) A instrução catch é usada para capturar e tratar as exceções que são lançadas pelo bloco try. Após a execução o fluxo de execução continua com o código que segue após o bloco catch e se tiver um bloco finally ele vai ser executado em seguida
+
+4) O programa interrompe a execução e a JVM mostra uma mensagem de erro
+
+5) Usar os blocos try e catch para capturar e tratar a exceção, mostrar uma mensagem para o usuário se for necessário e limpar os recursos, fechar corretamente os arquivos e conexões geralmente usando finally
+
+6) try: Contém o código que pode lançar uma exceção
+catch: Captura e trata a exceção lançada pelo bloco try
+finally: Contém código que vai se executado independente se uma exceção foi lançada ou não
+
+7) 1. O bloco catch está fora do bloco try, ele tem que estar após um bloco try
+2. A instrução for tem que estar dentro do bloco try
+
+8) 
+
+public class Exercicio1 { 
+    public static void main(String[] args) { 
+        int[] vetor = new int[] { 2, 4, 6, 8, 10, 12 }; 
+        try {
+            for (int i = 0; i < 12; i++) {
+                System.out.println(vetor[i]); 
+            }
+        } catch (ArrayIndexOutOfBoundsException exc) { 
+            System.out.println("Fim do vetor!"); 
+        } 
+    } 
+}
