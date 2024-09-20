@@ -1,0 +1,44 @@
+1) Sim, um bloco try pode ser seguido por vários blocos catch onde cada um trata um tipo de exceção diferente
+
+2) Sim, por exemplo um catch que captura Exception também capturaria uma ArrayIndexOutOfBoundsException já que é uma subclasse de Exception
+
+3) Se uma exceção não é capturada por um bloco catch no nível interno, ela é enviada para o bloco try externo ou para um catch externo se tiver
+
+4) Sim, um bloco catch interno pode relançar uma exceção usando o Throw
+
+5) A instrução Throw é usada para lançar uma exceção manualmente em um programa, ela interrompe o fluxo normal do programa e muda o controle para o primeiro bloco catch correspondente
+
+6) Sim, exemplo: Exception ou Error
+
+7) Sim, uma exceção pode ser relançada depois de ser capturada usando a instrução Throw
+
+8) Se ocorrer uma exceção em a() o bloco try será executado, mas ao ocorrer uma exceção no a() o controle vai se transferido para o catch correspondente, as linhas 4 e 6 vão ser executadas para tratar o erro em a(), o outro bloco try não vai ser executado porque a execução foi interrompida pelo tratamento em a()
+
+Se ocorrer uma exceção em b() o bloco try vai se executado normalmente e como não tem exceção em a() a execução continua. o outro bloco try vai se executado, mas ao ocorrer uma exceção no método b() o controle vai se transferido para o catch correspondente a as linhas 10 e 11 vão ser executadas para tratar o erro em b()
+
+9) Se ocorrer uma exceção em a() o bloco try será executado até que a exceção ocorra no método a(), ao ocorrer a exceção, o controle vai ser transferido para o catch e as linhas 5 e 6 vão ser executadas para tratar o erro
+
+10) Falso, o bloco finally é a última parte do código executada no escopo do bloco try/catch/finally, mas não necessariamente antes do programa terminar
+
+11) Exception e Error
+
+12) Não, pois erros indicam condições graves que não são esperadas e não podem ser tratadas de uma forma razoável pelo programa
+
+13)
+
+public class ParImpar { 
+    public static void main (String args[]) { 
+        int num; 
+        try { 
+            num = Integer.parseInt(args[0]); 
+            if ((num % 2) == 0) 
+                System.out.println("Número par"); 
+            else 
+                System.out.println("Número impar"); 
+        } catch (NumberFormatException e) { 
+            System.out.println("ERRO!!! Não é um número inteiro"); 
+        } catch (ArrayIndexOutOfBoundsException e) { 
+            System.out.println("ERRO!!! Nenhum número digitado"); 
+        } 
+    } 
+}
